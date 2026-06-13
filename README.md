@@ -49,7 +49,7 @@ Open [http://localhost:5173](http://localhost:5173).
    - `VITE_SUPABASE_ANON_KEY` — your Supabase anon public key
 3. Push to the `main` branch. GitHub Actions builds and deploys to the `gh-pages` branch.
 4. In **Settings → Pages**, set source to **Deploy from branch**, branch `gh-pages`, folder `/ (root)`.
-5. Your site will be live at `https://<username>.github.io/Freevid/`
+5. Your site will be live at `https://<username>.github.io/freevid/`
 
 > If your repo name is not `Freevid`, update the `base` path in [`vite.config.js`](vite.config.js) and the workflow env to match.
 
