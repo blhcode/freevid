@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import CommentList from '../components/CommentList';
+import EmbedCode from '../components/EmbedCode';
 import ReactionButtons from '../components/ReactionButtons';
 import { getVideoPublicUrl, isConfigured, supabase } from '../lib/supabase';
 
@@ -122,6 +123,8 @@ export default function Watch() {
         dislikeCount={video.dislike_count}
         onUpdate={handleReactionUpdate}
       />
+
+      <EmbedCode videoId={video.id} />
 
       <CommentList
         videoId={video.id}
