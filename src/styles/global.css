@@ -353,6 +353,108 @@ a {
   color: var(--text-muted);
 }
 
+.main-embed {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.embed-page {
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.embed-loading {
+  background: #000;
+}
+
+.embed-player {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  background: #000;
+}
+
+.embed-brand {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+}
+
+.embed-brand:hover {
+  color: var(--text);
+}
+
+.embed-error {
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-muted);
+  padding: 24px;
+}
+
+.embed-section {
+  margin-top: 8px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.embed-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.embed-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.embed-field {
+  margin-bottom: 12px;
+}
+
+.embed-field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.embed-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.embed-row input,
+.embed-row textarea {
+  flex: 1;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  font-family: ui-monospace, monospace;
+}
+
+.embed-row textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.embed-row-stack {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 @media (max-width: 600px) {
   .video-grid {
     grid-template-columns: 1fr;
