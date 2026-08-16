@@ -72,6 +72,10 @@ If uploads fail with **"The object exceeded the maximum allowed size"**:
 
 Videos larger than 50 MB require a Supabase Pro plan or compressing the file before upload.
 
+## Keep Supabase from pausing
+
+Free Supabase projects pause after ~7 days of inactivity. See [`keepalive/README.md`](keepalive/README.md) for a free Cloudflare Worker that pings your database and streams part of a video once a day.
+
 ## Managing content
 
 There is no admin panel. To remove spam or bad uploads, use the Supabase dashboard:
